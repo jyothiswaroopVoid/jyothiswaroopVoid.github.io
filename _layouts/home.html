@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<!-- Post List -->
+<div id="post-list">
+  {% assign all_posts = site.posts | where_exp: 'item', 'item.hidden != true' %}
+  {% for post in all_posts %}
+  <article class="post-card">
+    <a href="{{ post.url | relative_url }}" class="post-card-link">
+      <div class="post-card-body">
+        <h2 class="post-card-title">{{ post.title }}</h2>
+        {% if post.description %}
+        <p class="post-card-desc">{{ post.description }}</p>
+        {% else %}
+        <p class="post-card-desc">{{ post.content | strip_html | truncate: 160 }}</p>
+        {% endif %}
+        <div class="post-card-meta">
+          <span><i class="far fa-calendar-alt me-1"></i>{{ post.date | date: "%b %d, %Y" }}</span>
+          {% if post.categories.size > 0 %}
+          <span><i class="far fa-folder-open me-1"></i>
+            {% for cat in post.categories %}{{ cat }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          </span>
+          {% endif %}
+        </div>
+      </div>
+      {% if post.image %}
+      <div class="post-card-img">
+        <img src="{{ post.image }}" alt="{{ post.title }}" />
+      </div>
+      {% endif %}
+    </a>
+  </article>
+  {% endfor %}
+
+  {% if all_posts.size == 0 %}
+  <div class="empty-state">
+    <i class="fas fa-feather-alt"></i>
+    <p>No posts yet. Check back soon!</p>
+  </div>
+  {% endif %}
+</div>

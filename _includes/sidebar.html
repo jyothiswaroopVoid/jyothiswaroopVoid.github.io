@@ -1,0 +1,82 @@
+<aside id="sidebar" aria-label="Sidebar">
+
+  <!-- Profile Section -->
+  <div class="sidebar-profile">
+    <a href="{{ '/' | relative_url }}" class="avatar-link">
+      {% if site.avatar %}
+      <img
+        src="{{ site.avatar | relative_url }}"
+        alt="{{ site.title }} avatar"
+        class="avatar-img"
+        onerror="this.src='https://ui-avatars.com/api/?name={{ site.title | url_encode }}&background=1e3a5f&color=fff&size=112'"
+      />
+      {% else %}
+      <div class="avatar-placeholder">
+        <i class="fas fa-user"></i>
+      </div>
+      {% endif %}
+    </a>
+    <a href="{{ '/' | relative_url }}" class="site-name">{{ site.title }}</a>
+    <p class="site-tagline">{{ site.tagline }}</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sidebar-nav" aria-label="Main Navigation">
+    <ul class="nav-list">
+
+      <!-- Home -->
+      <li class="nav-item {% if page.layout == 'home' or page.url == '/' %}active{% endif %}">
+        <a href="{{ '/' | relative_url }}" class="nav-link">
+          <i class="fas fa-home fa-fw"></i>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <!-- Finance Tab -->
+      <li class="nav-item {% if page.url contains '/finance' %}active{% endif %}">
+        <a href="{{ '/finance/' | relative_url }}" class="nav-link">
+          <i class="fas fa-chart-line fa-fw"></i>
+          <span>Finance</span>
+        </a>
+      </li>
+
+      <!-- Projects Tab -->
+      <li class="nav-item {% if page.url contains '/projects' %}active{% endif %}">
+        <a href="{{ '/projects/' | relative_url }}" class="nav-link">
+          <i class="fas fa-code fa-fw"></i>
+          <span>Projects</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- Sidebar Bottom: Social Links -->
+  <div class="sidebar-bottom">
+    {% if site.github.username %}
+    <a href="https://github.com/{{ site.github.username }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    {% endif %}
+    {% if site.linkedin.username %}
+    <a href="https://linkedin.com/in/{{ site.linkedin.username }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    {% endif %}
+    {% if site.social.email %}
+    <a href="mailto:{{ site.social.email }}" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    {% endif %}
+
+    <span class="icon-border"></span>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+  </div>
+
+</aside>
+
+<!-- Mobile overlay -->
+<div id="sidebar-overlay"></div>

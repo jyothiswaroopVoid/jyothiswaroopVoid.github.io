@@ -1,0 +1,32 @@
+<header id="topbar" aria-label="Top Bar">
+  <div class="topbar-inner">
+
+    <!-- Mobile sidebar trigger -->
+    <button id="sidebar-trigger" class="topbar-btn" aria-label="Open Sidebar">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    <!-- Breadcrumb / Page title -->
+    <div id="topbar-title">
+      {% if page.layout == 'home' or page.url == '/' %}
+        Home
+      {% elsif page.url contains '/finance' %}
+        Finance
+      {% elsif page.url contains '/projects' %}
+        Projects
+      {% elsif page.title %}
+        {{ page.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </div>
+
+    <!-- Right side: search -->
+    <div class="topbar-right">
+      <button id="search-trigger" class="topbar-btn" aria-label="Search">
+        <i class="fas fa-search fa-fw"></i>
+      </button>
+    </div>
+
+  </div>
+</header>

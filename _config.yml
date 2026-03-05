@@ -1,0 +1,46 @@
+title: "Your Name"
+tagline: "Software Engineer & Finance Enthusiast"
+description: "Personal portfolio and blog"
+url: ""
+baseurl: ""
+
+avatar: /assets/img/avatar.jpg
+
+social:
+  name: Your Name
+  email: you@example.com
+  links:
+    - https://github.com/yourusername
+    - https://linkedin.com/in/yourusername
+
+github:
+  username: yourusername
+
+linkedin:
+  username: yourusername
+
+theme_mode: light
+
+paginate: 5
+paginate_path: "/page:num/"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
