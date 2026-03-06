@@ -42,7 +42,7 @@ permalink: /finance/
         </div>
         <div class="company-card-date">
           <i class="far fa-calendar-alt"></i>
-          <span>Completed: Feb 17, 20220</span>
+          <span>Completed: Feb 17, 2025</span>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@ permalink: /finance/
         <div class="company-logo-wrap">
           <img src="/assets/img/amgen_logo.png" alt="Amgen logo" class="company-logo" />
         </div>
-        <p class="company-description"></p>
+        <p class="company-description">This was good practice and gave me exposure to the structure and revenue drivers of companies within the Biotech industry</p>
         <div class="model-links">
           <a href="https://docs.google.com/spreadsheets/d/16SlUQFpyFTCL0JI-XVxj4mVYMt_VLJFZ/edit?usp=drive_link&ouid=109362905389092203598&rtpof=true&sd=true" target="_blank" class="model-link">
             <i class="fas fa-table"></i>
@@ -95,7 +95,7 @@ permalink: /finance/
         <div class="company-logo-wrap">
           <img src="/assets/img/seagate_logo.png" alt="Seagate logo" class="company-logo" />
         </div>
-        <p class="company-description">The AI boom, and need for exponenetial compute increased demand within the data-storage industry making Seagate lucrative. The DCF for Seagate has an integrated revenue and cost model by each operating segment. (emmpasis on unit economics)</p>
+        <p class="company-description">The AI boom and exponential growth in compute have increased demand in the data-storage industry. This DCF model for Seagate, monitors actual storage capacity demand flowing into the market wrt. to competitors and integrates revenue and cost projections by operating segment, with a focus on unit economics.</p>
         <div class="model-links">
           <a href="https://drive.google.com/file/d/1ORZua0VhKqfJ6AuQS2KUuC6KqqhguaIU/view?usp=drive_link" target="_blank" class="model-link">
             <i class="fas fa-file-alt"></i>
