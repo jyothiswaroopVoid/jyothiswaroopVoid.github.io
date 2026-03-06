@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Finance
-description: Financial analysis, notes, and market insights.
+description: Financial models, notes, and my thoughts on the market.
 permalink: /finance/
 ---
 
@@ -25,24 +25,24 @@ permalink: /finance/
         <div class="company-logo-wrap">
           <img src="/assets/img/apple_logo.png" alt="Apple logo" class="company-logo" />
         </div>
-        <p class="company-description">Your Apple analysis description here. Summarize your thesis, key findings, or what makes this build interesting.</p>
+        <p class="company-description">This was one of my first financial models. The DCF is done quarterly (3Y) and projections are forcasted out for the next 5Y (2Y being quarterly). So it was a big build for my first one, learnt a lot with this.</p>
         <div class="model-links">
-          <a href="#placeholder" target="_blank" class="model-link">
+          <a href="https://drive.google.com/file/d/1LoE5s5bVo-zFkZOkWouK_Prei_xYhVLm/view?usp=drive_link" target="_blank" class="model-link">
             <i class="fas fa-file-alt"></i>
             <span>Initial Review</span>
           </a>
-          <a href="#placeholder" target="_blank" class="model-link">
+          <a href="https://docs.google.com/spreadsheets/d/15WkF9AdLIY-jTlYiCO13Uy-oGSgxyaOR/edit?usp=drive_link&ouid=109362905389092203598&rtpof=true&sd=true" target="_blank" class="model-link">
             <i class="fas fa-table"></i>
             <span>Comparables Model</span>
           </a>
-          <a href="#placeholder" target="_blank" class="model-link">
+          <a href="https://docs.google.com/spreadsheets/d/170lZGx8ab11o1_uy4uB6FA5J3jlDuTmx/edit?usp=drive_link&ouid=109362905389092203598&rtpof=true&sd=true" target="_blank" class="model-link">
             <i class="fas fa-chart-line"></i>
             <span>Discounted Cash Flow</span>
           </a>
         </div>
         <div class="company-card-date">
           <i class="far fa-calendar-alt"></i>
-          <span>Completed: Month DD, YYYY</span>
+          <span>Completed: Feb 17, 20220</span>
         </div>
       </div>
     </div>
@@ -62,20 +62,20 @@ permalink: /finance/
         <div class="company-logo-wrap">
           <img src="/assets/img/amgen_logo.png" alt="Amgen logo" class="company-logo" />
         </div>
-        <p class="company-description">Your Amgen analysis description here. Summarize your thesis, key findings, or what makes this build interesting.</p>
+        <p class="company-description"></p>
         <div class="model-links">
-          <a href="#placeholder" target="_blank" class="model-link">
+          <a href="https://docs.google.com/spreadsheets/d/16SlUQFpyFTCL0JI-XVxj4mVYMt_VLJFZ/edit?usp=drive_link&ouid=109362905389092203598&rtpof=true&sd=true" target="_blank" class="model-link">
             <i class="fas fa-table"></i>
             <span>Comparables Model</span>
           </a>
-          <a href="#placeholder" target="_blank" class="model-link">
+          <a href="https://docs.google.com/spreadsheets/d/1G0H_PuTYLcTEWvo8sEC5he_8EF0z2UIz/edit?usp=drive_link&ouid=109362905389092203598&rtpof=true&sd=true" target="_blank" class="model-link">
             <i class="fas fa-chart-line"></i>
             <span>Discounted Cash Flow</span>
           </a>
         </div>
         <div class="company-card-date">
           <i class="far fa-calendar-alt"></i>
-          <span>Completed: Month DD, YYYY</span>
+          <span>Completed: Apr 02, 2025</span>
         </div>
       </div>
     </div>
@@ -95,20 +95,20 @@ permalink: /finance/
         <div class="company-logo-wrap">
           <img src="/assets/img/seagate_logo.png" alt="Seagate logo" class="company-logo" />
         </div>
-        <p class="company-description">Your Seagate analysis description here. Summarize your thesis, key findings, or what makes this build interesting.</p>
+        <p class="company-description">The AI boom, and need for exponenetial compute increased demand within the data-storage industry making Seagate lucrative. The DCF for Seagate has an integrated revenue and cost model by each operating segment. (emmpasis on unit economics)</p>
         <div class="model-links">
-          <a href="#placeholder" target="_blank" class="model-link">
+          <a href="https://drive.google.com/file/d/1ORZua0VhKqfJ6AuQS2KUuC6KqqhguaIU/view?usp=drive_link" target="_blank" class="model-link">
             <i class="fas fa-file-alt"></i>
             <span>Initial Review</span>
           </a>
-          <a href="#placeholder" target="_blank" class="model-link">
+          <a href="https://docs.google.com/spreadsheets/d/19_cWlo3nW52ignuvveg6_XssBBnEWB8G/edit?usp=drive_link&ouid=109362905389092203598&rtpof=true&sd=true" target="_blank" class="model-link">
             <i class="fas fa-chart-line"></i>
             <span>Discounted Cash Flow</span>
           </a>
         </div>
         <div class="company-card-date">
           <i class="far fa-calendar-alt"></i>
-          <span>Completed: Month DD, YYYY</span>
+          <span>Completed: Nov 17, 2025</span>
         </div>
       </div>
     </div>
