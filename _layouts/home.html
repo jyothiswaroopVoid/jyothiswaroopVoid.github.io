@@ -9,11 +9,6 @@ layout: default
   {% for post in all_posts %}
   <article class="post-card">
     <a href="{{ post.url | relative_url }}" class="post-card-link">
-      {% if post.gif or post.image %}
-      <div class="post-card-media">
-        <img src="{{ post.gif | default: post.image }}" alt="{{ post.title }}" />
-      </div>
-      {% endif %}
       <div class="post-card-body">
         <h2 class="post-card-title">{{ post.title }}</h2>
         {% if post.description %}
@@ -38,6 +33,11 @@ layout: default
           {% endif %}
         </div>
       </div>
+      {% if post.gif or post.image %}
+      <div class="post-card-media">
+        <img src="{{ post.gif | default: post.image }}" alt="{{ post.title }}" />
+      </div>
+      {% endif %}
     </a>
   </article>
   {% endfor %}
