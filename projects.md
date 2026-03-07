@@ -76,8 +76,6 @@ permalink: /projects/
   </div>
 
   <div id="post-list">
-
-    <!-- Egg Price Vizz -->
     <article class="post-card">
       <a href="/projects/egg-price-vizz/" class="post-card-link">
         <div class="post-card-body">
@@ -97,6 +95,5 @@ permalink: /projects/
         </div>
       </a>
     </article>
-
   </div>
 </div>
