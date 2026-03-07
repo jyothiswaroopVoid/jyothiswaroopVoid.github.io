@@ -5,29 +5,8 @@ description: Things I've built — open source, research, and side projects.
 permalink: /projects/
 ---
 
+<!-- Project Cards -->
 <div class="projects-grid">
-
-  <!-- Egg Price Vizz -->
-  <a href="/projects/egg-price-vizz/" class="project-card project-card-banner">
-    <div class="project-banner">
-      <img src="/assets/img/egg_price.gif" alt="Egg Price Vizz" class="project-banner-gif" />
-      <div class="project-banner-overlay">
-        <span class="project-banner-label"><i class="fas fa-chart-line"></i> View Project</span>
-      </div>
-    </div>
-    <div class="project-card-body-inner">
-      <div class="project-icon"><i class="fas fa-egg"></i></div>
-      <div class="project-title">Egg Price Vizz</div>
-      <div class="project-desc">
-        An interactive visualization tracking caged egg prices over time — built with Python and Plotly.
-      </div>
-      <div class="project-tags">
-        <span class="project-tag">Python</span>
-        <span class="project-tag">Plotly</span>
-        <span class="project-tag">Data Viz</span>
-      </div>
-    </div>
-  </a>
 
   <div class="project-card">
     <div class="project-card-header">
@@ -89,65 +68,60 @@ permalink: /projects/
 
 </div>
 
-<p style="margin-top:2rem; font-size:0.85rem; color:var(--text-muted);">
-  Edit <code>projects.md</code> to add your real projects.
-</p>
+<!-- Project Posts Section -->
+<div class="finance-section" style="margin-top: 2.5rem;">
+  <div class="section-header">
+    <div class="section-icon"><i class="fas fa-sticky-note"></i></div>
+    <h2>Project Posts</h2>
+  </div>
+
+  <div id="post-list">
+
+    <!-- Egg Price Vizz -->
+    <article class="post-card">
+      <a href="/projects/egg-price-vizz/" class="post-card-link">
+        <div class="post-card-banner-wrap">
+          <img src="/assets/img/egg_price.gif" alt="Egg Price Vizz" class="post-card-banner-img" />
+        </div>
+        <div class="post-card-body">
+          <h2 class="post-card-title">Egg Price Vizz</h2>
+          <p class="post-card-desc">An interactive visualization tracking caged egg prices over time — built with Python and Plotly.</p>
+          <div class="post-card-meta">
+            <span><i class="far fa-calendar-alt me-1"></i>Mar 06, 2025</span>
+            <span><i class="fa fa-tags me-1"></i>
+              <span class="post-tag">Python</span>
+              <span class="post-tag">Plotly</span>
+              <span class="post-tag">Data Viz</span>
+            </span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+  </div>
+</div>
 
 <style>
-  .project-card-banner {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    overflow: hidden;
-  }
-  .project-banner {
-    position: relative;
-    width: 100%;
-    height: 180px;
+  /* GIF banner inside post card */
+  .post-card-banner-wrap {
+    width: 220px;
+    flex-shrink: 0;
     overflow: hidden;
     background: #0f172a;
   }
-  .project-banner-gif {
+
+  .post-card-banner-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-    opacity: 0.9;
+    object-fit: contain;
+    object-position: center;
+    display: block;
   }
-  .project-card-banner:hover .project-banner-gif {
-    transform: scale(1.04);
-    opacity: 1;
-  }
-  .project-banner-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);
-    display: flex;
-    align-items: flex-end;
-    padding: 0.75rem 1rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  .project-card-banner:hover .project-banner-overlay {
-    opacity: 1;
-  }
-  .project-banner-label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #fff;
-    background: var(--accent, #3b82f6);
-    padding: 0.3rem 0.75rem;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-  }
-  .project-card-body-inner {
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+
+  @media (max-width: 768px) {
+    .post-card-banner-wrap {
+      width: 100%;
+      height: 180px;
+    }
   }
 </style>
