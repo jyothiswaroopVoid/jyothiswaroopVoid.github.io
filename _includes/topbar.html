@@ -6,27 +6,82 @@
       <i class="fas fa-bars fa-fw"></i>
     </button>
 
-    <!-- Breadcrumb / Page title -->
-    <div id="topbar-title">
-      {% if page.layout == 'home' or page.url == '/' %}
-        Home
-      {% elsif page.url contains '/finance' %}
-        Finance
-      {% elsif page.url contains '/projects' %}
-        Projects
-      {% elsif page.title %}
-        {{ page.title }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </div>
+    <!-- Breadcrumb -->
+    <nav id="breadcrumb" aria-label="Breadcrumb">
+      {% if page.url == '/' or page.layout == 'home' %}
+        <span class="breadcrumb-item">Home</span>
 
-    <!-- Right side: search -->
-    <div class="topbar-right">
-      <button id="search-trigger" class="topbar-btn" aria-label="Search">
-        <i class="fas fa-search fa-fw"></i>
-      </button>
-    </div>
+      {% elsif page.url == '/finance/' %}
+        <a href="/" class="breadcrumb-item breadcrumb-link">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-item">Finance</span>
+
+      {% elsif page.url == '/projects/' %}
+        <a href="/" class="breadcrumb-item breadcrumb-link">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-item">Projects</span>
+
+      {% elsif page.url contains '/projects/' %}
+        <a href="/" class="breadcrumb-item breadcrumb-link">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/projects/" class="breadcrumb-item breadcrumb-link">Projects</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-item">{{ page.title }}</span>
+
+      {% elsif page.categories contains 'finance' %}
+        <a href="/" class="breadcrumb-item breadcrumb-link">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="/finance/" class="breadcrumb-item breadcrumb-link">Finance</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-item">{{ page.title }}</span>
+
+      {% elsif page.layout == 'post' %}
+        <a href="/" class="breadcrumb-item breadcrumb-link">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-item">{{ page.title }}</span>
+
+      {% else %}
+        <a href="/" class="breadcrumb-item breadcrumb-link">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-item">{{ page.title }}</span>
+      {% endif %}
+    </nav>
 
   </div>
 </header>
+
+<style>
+  #breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
+  .breadcrumb-item {
+    font-size: 0.88rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+
+  .breadcrumb-link {
+    color: var(--text-muted);
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+
+  .breadcrumb-link:hover {
+    color: var(--accent);
+  }
+
+  .breadcrumb-sep {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    user-select: none;
+  }
+</style>

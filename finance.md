@@ -62,7 +62,7 @@ permalink: /finance/
         <div class="company-logo-wrap">
           <img src="/assets/img/amgen_logo.png" alt="Amgen logo" class="company-logo" />
         </div>
-        <p class="company-description">This was good practice and gave me exposure to the structure and revenue drivers of companies within the Biotech industry</p>
+        <p class="company-description">This was good practice and gave me exposure to the structure and revenue drivers of companies within theBiotech industry</p>
         <div class="model-links">
           <a href="https://docs.google.com/spreadsheets/d/16SlUQFpyFTCL0JI-XVxj4mVYMt_VLJFZ/edit?usp=drive_link&ouid=109362905389092203598&rtpof=true&sd=true" target="_blank" class="model-link">
             <i class="fas fa-table"></i>
@@ -116,35 +116,57 @@ permalink: /finance/
 
 </div>
 
-<div class="finance-section">
+<div class="finance-section" style="margin-top: 2.5rem;">
   <div class="section-header">
     <div class="section-icon"><i class="fas fa-sticky-note"></i></div>
     <h2>Finance Posts</h2>
   </div>
 
-  {% assign finance_posts = site.posts | where_exp: 'p', 'p.categories contains "finance"' %}
-  {% if finance_posts.size > 0 %}
-    <div id="post-list">
-      {% for post in finance_posts %}
-      <article class="post-card">
-        <a href="{{ post.url | relative_url }}" class="post-card-link">
-          <div class="post-card-body">
-            <h2 class="post-card-title">{{ post.title }}</h2>
-            <p class="post-card-desc">{{ post.description | default: post.content | strip_html | truncate: 160 }}</p>
-            <div class="post-card-meta">
-              <span><i class="far fa-calendar-alt me-1"></i>{{ post.date | date: "%b %d, %Y" }}</span>
-            </div>
+  <div id="post-list">
+    {% assign finance_posts = site.posts | where_exp: 'p', 'p.categories contains "finance"' %}
+    {% for post in finance_posts %}
+    <article class="post-card">
+      <a href="{{ post.url | relative_url }}" class="post-card-link">
+        {% if post.gif or post.image %}
+        <div class="post-card-media">
+          <img src="{{ post.gif | default: post.image }}" alt="{{ post.title }}" />
+        </div>
+        {% endif %}
+        <div class="post-card-body">
+          <h2 class="post-card-title">{{ post.title }}</h2>
+          {% if post.description %}
+          <p class="post-card-desc">{{ post.description }}</p>
+          {% else %}
+          <p class="post-card-desc">{{ post.content | strip_html | truncate: 160 }}</p>
+          {% endif %}
+          <div class="post-card-meta">
+            <span><i class="far fa-calendar-alt me-1"></i>{{ post.date | date: "%b %d, %Y" }}</span>
+            {% if post.categories.size > 0 %}
+            <span>
+              <i class="far fa-folder-open me-1"></i>
+              {% for cat in post.categories %}{{ cat }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            </span>
+            {% endif %}
+            {% if post.tags.size > 0 %}
+            <span>
+              {% for tag in post.tags %}
+              <span class="post-tag">{{ tag }}</span>
+              {% endfor %}
+            </span>
+            {% endif %}
           </div>
-        </a>
-      </article>
-      {% endfor %}
-    </div>
-  {% else %}
+        </div>
+      </a>
+    </article>
+    {% endfor %}
+
+    {% if finance_posts.size == 0 %}
     <div class="empty-state">
       <i class="fas fa-chart-line"></i>
       <p>No finance posts yet. Add posts with <code>categories: [finance]</code>.</p>
     </div>
-  {% endif %}
+    {% endif %}
+  </div>
 </div>
 
 <!-- Company Card Script -->
