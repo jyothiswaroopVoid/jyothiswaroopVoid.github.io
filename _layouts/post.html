@@ -31,9 +31,58 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.embed %}
+  <div class="embed-section">
+    <div class="embed-header">
+      <i class="fas fa-chart-bar me-2"></i>
+      <span>Interactive Visualization</span>
+    </div>
+    <div class="embed-wrapper">
+      <iframe
+        src="{{ page.embed }}"
+        class="embed-iframe"
+        frameborder="0"
+        scrolling="yes"
+        allowfullscreen
+        title="{{ page.title }} visualization"
+      ></iframe>
+    </div>
+  </div>
+  {% endif %}
+
   <div class="post-footer">
     <a href="{{ '/' | relative_url }}" class="btn-back">
       <i class="fas fa-arrow-left me-1"></i> Back to posts
     </a>
   </div>
 </article>
+
+<style>
+  .embed-section {
+    margin: 2.5rem 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+  .embed-header {
+    padding: 0.75rem 1.25rem;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+  }
+  .embed-wrapper {
+    width: 100%;
+    height: 700px;
+  }
+  .embed-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+</style>
