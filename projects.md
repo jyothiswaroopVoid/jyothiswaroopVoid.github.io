@@ -81,8 +81,8 @@ permalink: /projects/
     <article class="post-card">
       <a href="/projects/egg-price-vizz/" class="post-card-link">
         <div class="post-card-body">
-          <h2 class="post-card-title">Egg Price Vizz</h2>
-          <p class="post-card-desc">An interactive visualization tracking caged egg prices over time — built with Python and Plotly.</p>
+          <h2 class="post-card-title">Egg Price Viz</h2>
+          <p class="post-card-desc">An interactive visualization tracking caged egg prices over time</p>
           <div class="post-card-meta">
             <span><i class="far fa-calendar-alt me-1"></i>Mar 06, 2025</span>
             <span><i class="fa fa-tags me-1"></i>

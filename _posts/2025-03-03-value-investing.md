@@ -28,6 +28,5 @@ Your job is to take advantage of his irrationality, not be driven by it.
 3. Ignore short-term market **noise**
 4. Be **patient** — good opportunities are rare
 
----
 
 *More finance notes in the [Finance](/finance/) section.*
