@@ -12,22 +12,22 @@ permalink: /projects/
     <div class="project-card-header">
       <div class="project-icon"><i class="fas fa-brain"></i></div>
       <div class="project-links">
-        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+        <a href="https://github.com/KTH-Sys/MLSN_Davis-House-Price-Prediction" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://mlsndavis-house-price-prediction.streamlit.app/" target="_blank" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
       </div>
     </div>
-    <div class="project-title">Project One</div>
+    <div class="project-title">Davis House Price Prediction</div>
     <div class="project-desc">
-      A brief description of this project. What does it do? What problem does it solve?
-      Replace this with your real project details.
+      ML pipeline processing 2M+ rows with modular ETL, baseline linear and tree-based regression models evaluated with RMSE and cross-validation, deployed via Streamlit dashboard.
     </div>
     <div class="project-tags">
       <span class="project-tag">Python</span>
-      <span class="project-tag">Machine Learning</span>
-      <span class="project-tag">PyTorch</span>
+      <span class="project-tag">Pandas</span>
+      <span class="project-tag">scikit-learn</span>
+      <span class="project-tag">Streamlit</span>
     </div>
   </div>
-
+<!--
   <div class="project-card">
     <div class="project-card-header">
       <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
@@ -46,7 +46,9 @@ permalink: /projects/
       <span class="project-tag">Finance</span>
     </div>
   </div>
+-->
 
+<!--
   <div class="project-card">
     <div class="project-card-header">
       <div class="project-icon"><i class="fas fa-code"></i></div>
@@ -65,7 +67,7 @@ permalink: /projects/
       <span class="project-tag">Node.js</span>
     </div>
   </div>
-
+-->
 </div>
 
 <!-- Project Posts Section -->
