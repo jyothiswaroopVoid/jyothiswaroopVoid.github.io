@@ -10,7 +10,7 @@ permalink: /projects/
 
   <div class="project-card">
     <div class="project-card-header">
-      <div class="project-icon"><i class="fas fa-brain"></i></div>
+      <div class="project-icon"><i class="fas fa-house"></i></div>
       <div class="project-links">
         <a href="https://github.com/KTH-Sys/MLSN_Davis-House-Price-Prediction" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://mlsndavis-house-price-prediction.streamlit.app/" target="_blank" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
@@ -84,7 +84,7 @@ permalink: /projects/
           <h2 class="post-card-title">Egg Price Viz</h2>
           <p class="post-card-desc">An interactive visualization tracking caged egg prices over time</p>
           <div class="post-card-meta">
-            <span><i class="far fa-calendar-alt me-1"></i>Mar 06, 2025</span>
+            <span><i class="far fa-calendar-alt me-1"></i>Feb 21, 2025</span>
             <span><i class="fa fa-tags me-1"></i>
               <span class="post-tag">Python</span>
               <span class="post-tag">Plotly</span>
