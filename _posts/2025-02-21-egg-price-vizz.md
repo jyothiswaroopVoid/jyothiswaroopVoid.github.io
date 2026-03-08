@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Egg Price Vizz"
-date: 2025-03-06
+title: "Egg Price Viz"
+date: 2025-02-21
 description: "An interactive visualization tracking caged egg prices over time."
+categories: [projects]
 tags: [Python, Pandas, NumPy, Data Viz, Plotly]
 gif: /assets/img/egg_price.gif
 embed: /assets/egg_prices_caged.html
