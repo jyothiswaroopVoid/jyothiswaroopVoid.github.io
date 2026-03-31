@@ -5,8 +5,6 @@ date: 2025-03-01
 description: "A county-month panel model predicting large wildfire incidence across the US using logistic regression and random forest."
 categories: [projects]
 tags: [R, Machine Learning, Random Forest, Logistic Regression, Statistics]
-gif: /assets/img/STA141 Wildfire picture.gif
-embed: /assets/wildfire_prediction.html
 permalink: /projects/wildfire-prediction/
 ---
 
@@ -41,6 +39,10 @@ A **notable fire** is defined as any fire with a final burned area of ≥ 300 ac
 - **Results**
 
     Exploratory analysis reveals strong seasonality, pronounced geographic clustering in the western United States, and clear associations between fire incidence and drought, temperature, and land cover type. The random forest modestly outperforms logistic regression, with both models achieving meaningful predictive signal above chance.
+
+## Full Report
+
+[View the full report here](/assets/wildfire_prediction.html)
 
 ## Tools Used
 - R — core language
